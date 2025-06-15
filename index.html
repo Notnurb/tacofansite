@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Fan Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🌮 Taco Fan Club</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Taco Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to the Taco Fan Club!</h1>
+        <p>Discover the joy of tacos with us.</p>
+        <button onclick="showTacoFact()">Get a Taco Fact!</button>
+        <p id="taco-fact"></p>
+    </section>
+
+    <!-- Taco Gallery -->
+    <section id="gallery" class="gallery">
+        <h2>Taco Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Classic+Taco" alt="Classic Taco">
+                <p>Classic Beef Taco</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Fish+Taco" alt="Fish Taco">
+                <p>Fish Taco</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Veggie+Taco" alt="Veggie Taco">
+                <p>Veggie Taco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Join the Taco Fan Club</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Why do you love tacos?</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Taco Fan Club. All rights not reserved lol.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
